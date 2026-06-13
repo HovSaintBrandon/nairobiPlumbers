@@ -8,57 +8,111 @@
   <link rel="canonical" href="https://nairobiplumbers.co.ke/products/" />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Plumbing Products in Kenya | Pipes, Fittings & Accessories">
-  <meta property="og:description" content="Browse quality plumbing products in Kenya including pipes, taps, fittings, valves, and bathroom accessories. Durable, affordable, and trusted supplies.">
-  <meta property="og:image" content="https://nairobiplumbers.co.ke/public/og/products.jpg">
+  <meta property="og:description" content="Browse quality plumbing products in Kenya. Durable, affordable, and trusted supplies.">
   <meta property="og:url" content="https://nairobiplumbers.co.ke/products/">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Plumbing Products in Kenya | Pipes, Fittings & Accessories">
-  <meta name="twitter:description" content="Browse quality plumbing products in Kenya including pipes, taps, fittings, valves, and bathroom accessories. Durable, affordable, and trusted supplies.">
-  <meta name="twitter:image" content="https://nairobiplumbers.co.ke/public/og/products.jpg">
   <script type='application/ld+json'>
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Nairobi Plumbers",
     "url": "https://nairobiplumbers.co.ke",
-    "telephone": "+254-XXX-XXX-XXX",
-    "email": "info@nairobiplumbers.co.ke",
-    "image": "https://nairobiplumbers.co.ke/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "[Your Street Address]",
-      "addressLocality": "Nairobi",
-      "addressCountry": "KE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": -1.286389, "longitude": 36.817223 },
-    "openingHours": "Mo-Su 00:00-23:59",
-    "priceRange": "KSh",
-    "areaServed": ["Nairobi","Westlands","Karen","Kilimani","Kasarani","Ruaka","Lavington"]
-  }
-  </script>
-  <script type='application/ld+json'>
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nairobiplumbers.co.ke" },
-      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://nairobiplumbers.co.ke/products/" }
-    ]
+    "telephone": "+254-706-379-094",
+    "email": "hello@nairobiplumbers.co.ke",
+    "address": { "@type": "PostalAddress", "streetAddress": "Ngong Road, Kilimani", "addressLocality": "Nairobi", "addressCountry": "KE" },
+    "openingHours": "Mo-Su 00:00-23:59"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Reveal animations */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+
+    /* Page Hero */
+    .page-hero {
+      background: linear-gradient(135deg, #1d3557 0%, #0f1c2e 100%);
+      color: #fff;
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    }
+    .page-hero h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; color: #fff; }
+    .page-hero p { font-size: 1.1rem; opacity: 0.85; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .breadcrumb { font-size: 0.8125rem; opacity: 0.7; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; position: relative; z-index: 2; }
+    .breadcrumb a { color: rgba(255,255,255,0.8); }
+    .breadcrumb a:hover { color: #fff; }
+
+    /* Products Layout adjustments */
+    .products-layout { padding: 4rem 0; display: grid; grid-template-columns: 260px 1fr; gap: 3rem; }
+    @media (max-width: 900px) { .products-layout { grid-template-columns: 1fr; } }
+    
+    .products-sidebar { position: sticky; top: 100px; }
+    .search-box { position: relative; margin-bottom: 2rem; }
+    .search-box input { width: 100%; padding: 0.875rem 1rem 0.875rem 2.5rem; border: 1.5px solid var(--border); border-radius: 12px; outline: none; transition: border-color 0.2s; background: var(--surface); }
+    .search-box input:focus { border-color: var(--primary); background: #fff; }
+    .search-icon { position: absolute; left: 0.8rem; top: 50%; transform: translateY(-50%); color: var(--text-light); }
+    
+    .category-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .category-list { list-style: none; display: flex; flex-direction: column; gap: 0.25rem; }
+    .category-list a { display: block; padding: 0.6rem 0.8rem; border-radius: 8px; color: var(--text); transition: background 0.2s, color 0.2s; font-size: 0.95rem; }
+    .category-list a:hover { background: var(--surface); color: var(--primary); }
+    .category-list a.active { background: rgba(230,57,70,0.08); color: var(--primary); font-weight: 600; }
+
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+    
+    /* Product Card */
+    .product-card { background: #fff; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+    .product-card__badge { position: absolute; top: 1rem; left: 1rem; background: var(--primary); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; z-index: 1; }
+    .product-card__img-wrap { aspect-ratio: 1; overflow: hidden; background: var(--surface-2); position: relative; }
+    .product-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .product-card:hover .product-card__img { transform: scale(1.05); }
+    .product-card__content { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+    .product-card__title { font-size: 1rem; font-weight: 700; line-height: 1.3; }
+    .product-card__desc { font-size: 0.8rem; color: var(--text-light); line-height: 1.5; flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .product-card__prices { display: flex; align-items: baseline; gap: 0.5rem; margin-top: 0.5rem; }
+    .product-card__price { font-size: 1.1rem; font-weight: 800; color: var(--primary); }
+    .product-card__original { font-size: 0.875rem; color: var(--text-light); text-decoration: line-through; }
+    .product-card__btn { margin-top: 0.75rem; width: 100%; padding: 0.6rem; text-align: center; border-radius: 8px; border: 1px solid rgba(0,0,0,0.15); font-size: 0.8125rem; font-weight: 600; color: var(--text); display: flex; align-items: center; justify-content: center; gap: 0.4rem; transition: all 0.2s; }
+    .product-card__btn:hover { border-color: #25D366; color: #25D366; }
+  </style>
 </head>
 <body>
 
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M48 136a40 40 0 0140-40h288a40 40 0 0140 40v240a40 40 0 01-40 40H88a40 40 0 01-40-40V136z" fill="none" stroke="currentColor" stroke-width="32"/><path d="M112 160l144 112 144-112" fill="none" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        hello@nairobiplumbers.co.ke
+      </div>
+      <div class="topbar__right">
+        <a href="tel:+254706379094">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +254 706 379 094
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-    <div class="container navbar__inner">
-      <a href="/" class="navbar__logo" style="display:flex; align-items:center;">
-        <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers Logo" style="height:160px; width:auto;">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers Logo">
       </a>
       <nav class="navbar__nav">
         <a href="/">Home</a>
@@ -68,70 +122,74 @@
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="dropdown__menu">
-            <div class="dropdown__menu-inner">
-              <a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a>
-              <a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a>
-              <a href="/services/water-heater-installation-nairobi/">Water Heater Installation</a>
-              <a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a>
-              <a href="/services/">All Services →</a>
-            </div>
+            <a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a>
+            <a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a>
+            <a href="/services/water-heater-installation-nairobi/">Water Heater Installation</a>
+            <a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a>
+            <a href="/services/toilet-repair-nairobi/">Toilet Repair</a>
+            <a href="/services/biodigester-installation-kenya/">Biodigester Installation</a>
+            <a href="/services/" style="font-weight:700;color:var(--primary);">All Services &rarr;</a>
           </div>
         </div>
-        <a href="/products/" class="active">Products</a>
+        <a href="/products/" class="active">All Products</a>
         <a href="/about/">About Us</a>
         <a href="/contact/">Contact us</a>
       </nav>
-      <a href="tel:+254XXXXXXXXX" class="btn btn-primary navbar__cta">Call Now</a>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu"></button>
+      <a href="tel:+254706379094" class="btn btn-primary navbar__cta">Call Now</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
     <div class="mobile-menu__header">
-      <span class="font-bold">Menu</span>
-      <button class="mobile-menu__close" id="mobile-close" aria-label="Close menu"></button>
+      <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers" style="height:44px;">
+      <button class="mobile-menu__close" id="mobile-close" aria-label="Close">&times;</button>
     </div>
     <nav>
       <a href="/">Home</a>
       <a href="/services/">Plumbing Services</a>
-      <a href="/products/" class="active">Products</a>
+      <a href="/products/" class="active">All Products</a>
       <a href="/about/">About Us</a>
       <a href="/contact/">Contact us</a>
     </nav>
-    <a href="tel:+254XXXXXXXXX" class="mobile-menu__phone">Call +254 XXX XXX XXX</a>
+    <a href="tel:+254706379094" class="mobile-menu__phone">Call +254 706 379 094</a>
   </div>
 
-  <!-- ===== PAGE HEADER ===== -->
-  <section class="page-header">
-    <div class="container">
-      <p class="page-header__eyebrow">Contact</p>
-      <h1 class="page-header__title">Get in touch</h1>
-      <p class="page-header__desc">Same-day callouts across Nairobi. Reply within 10 minutes during business hours.</p>
+  <!-- ===== HERO ===== -->
+  <section class="page-hero">
+    <div class="container" style="position:relative; z-index:2;">
+      <nav class="breadcrumb reveal">
+        <a href="/">Home</a> <span>/</span> <span>Products</span>
+      </nav>
+      <h1 class="reveal delay-1">Plumbing Products &amp; Supplies</h1>
+      <p class="reveal delay-2">Browse quality plumbing products including pipes, taps, fittings, valves, and bathroom accessories.</p>
     </div>
   </section>
 
   <!-- ===== PRODUCTS LAYOUT ===== -->
-  <section class="section" style="padding-top: 2rem;">
-    <div class="container products-layout">
-      <!-- Sidebar -->
-      <aside class="products-sidebar">
-        <div class="search-box">
-          <input type="text" id="product-search" placeholder="Search products..." aria-label="Search products">
-          <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-        <div class="category-list-container">
-          <h3 class="category-title">Product Categories</h3>
-          <ul class="category-list" id="category-sidebar">
-            <!-- Dynamically populated -->
-          </ul>
-        </div>
-      </aside>
+  <section class="container products-layout reveal delay-1">
+    <!-- Sidebar -->
+    <aside class="products-sidebar">
+      <div class="search-box">
+        <input type="text" id="product-search" placeholder="Search products..." aria-label="Search products">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="category-list-container">
+        <h3 class="category-title">Categories</h3>
+        <ul class="category-list" id="category-list">
+          <li><a href="#" class="active" data-cat="all">Loading categories...</a></li>
+        </ul>
+      </div>
+    </aside>
 
-      <!-- Main Content -->
-      <div class="products-main">
-        <div class="products-grid" id="all-products-grid">
-          <!-- Dynamically populated -->
+    <!-- Main Content -->
+    <div class="products-main">
+      <div class="products-grid" id="products-grid">
+        <div style="grid-column:1/-1;text-align:center;padding:3rem;">
+          <p>Loading products...</p>
         </div>
       </div>
     </div>
@@ -142,21 +200,17 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <h4 class="footer__col-title">Quicklinks</h4>
+          <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers" style="height:48px; margin-bottom:1rem; filter:brightness(0) invert(1);">
+          <p style="font-size:0.8125rem;color:rgba(255,255,255,0.6);max-width:220px;">Licensed plumbers serving Nairobi and Mombasa since 2012.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
           <ul class="footer__col-list">
             <li><a href="/">Home</a></li>
             <li><a href="/services/">Services</a></li>
+            <li><a href="/products/">Products</a></li>
             <li><a href="/about/">About Us</a></li>
             <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer__col-title">Our Areas</h4>
-          <ul class="footer__col-list">
-            <li><a href="/areas/westlands/">Westlands</a></li>
-            <li><a href="/areas/karen/">Karen</a></li>
-            <li><a href="/areas/kilimani/">Kilimani</a></li>
-            <li><a href="/areas/kasarani/">Kasarani</a></li>
           </ul>
         </div>
         <div>
@@ -164,56 +218,67 @@
           <ul class="footer__col-list">
             <li><a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a></li>
             <li><a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a></li>
-            <li><a href="/services/water-heater-installation-nairobi/">Instant Showers</a></li>
             <li><a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a></li>
+            <li><a href="/services/water-heater-installation-nairobi/">Water Heater</a></li>
+            <li><a href="/services/toilet-repair-nairobi/">Toilet Repair</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer__col-title">Get in Touch</h4>
+          <h4 class="footer__col-title">Contact</h4>
           <ul class="footer__col-list">
-            <li class="footer__contact-item"><span class="icon"></span> Nairobi, Kenya</li>
-            <li class="footer__contact-item"><span class="icon"></span> <a href="tel:+254XXXXXXXXX">+254 XXX XXX XXX</a></li>
-            <li class="footer__contact-item"><span class="icon">️</span> <a href="mailto:info@nairobiplumbers.co.ke">info@nairobiplumbers.co.ke</a></li>
+            <li class="footer__contact-item">Ngong Road, Kilimani, Nairobi</li>
+            <li class="footer__contact-item"><a href="tel:+254706379094">+254 706 379 094</a></li>
+            <li class="footer__contact-item"><a href="mailto:hello@nairobiplumbers.co.ke">hello@nairobiplumbers.co.ke</a></li>
           </ul>
           <div class="footer__social">
-            <a href="https://wa.me/254XXXXXXXXX" class="footer__social-btn" aria-label="WhatsApp"></a>
+            <a href="#" class="footer__social-btn" aria-label="Facebook">f</a>
+            <a href="https://wa.me/254706379094" class="footer__social-btn" aria-label="WhatsApp">w</a>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© <span id="year"></span> Nairobi Plumbers. All rights reserved.</p>
-      <p>Licensed & insured plumbers serving Nairobi.</p>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+        <p>&copy; <span id="year"></span> Nairobi Plumbers. All rights reserved.</p>
+        <p>Licensed &amp; insured plumbers serving Nairobi.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- ===== FLOATING WHATSAPP ===== -->
-  <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nairobi%20Plumbers%2C%20I%20need%20a%20plumber%20in%20Nairobi." target="_blank" rel="noreferrer" class="floating-wa" aria-label="Chat on WhatsApp">
+  <!-- Floating WA -->
+  <a href="https://wa.me/254706379094?text=Hello%20Nairobi%20Plumbers" target="_blank" rel="noreferrer" class="floating-wa" aria-label="Chat on WhatsApp">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.549 4.107 1.512 5.834L0 24l6.335-1.493A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.359-.213-3.72.876.936-3.623-.234-.372A9.818 9.818 0 112.182 12 9.818 9.818 0 0112 21.818z"/></svg>
     <span class="floating-wa__dot"></span>
   </a>
 
-  <!-- Mobile Sticky Call Bar -->
+  <!-- Mobile Sticky CTA -->
   <div class="mobile-sticky-cta">
-    <a href="tel:+254XXXXXXXXX" class="btn btn-primary" style="width:100%; border-radius:0;">Call Now: +254 XXX XXX XXX</a>
+    <a href="tel:+254706379094">Call Now: +254 706 379 094</a>
   </div>
 
-  <!-- ===== INQUIRY BASKET ===== -->
+  <!-- Inquiry Basket -->
   <button class="inquiry-float" id="inquiry-float" aria-label="Open inquiry basket">
-    ️ Inquiry (<span class="inquiry-count">0</span>)
+    Inquiry (<span class="inquiry-count">0</span>)
   </button>
-  <div class="inquiry-drawer" id="inquiry-drawer" role="dialog" aria-modal="true">
+  <div class="inquiry-drawer" id="inquiry-drawer" role="dialog" aria-modal="true" aria-label="Inquiry basket">
     <div class="inquiry-drawer__backdrop" id="inquiry-backdrop"></div>
     <aside class="inquiry-drawer__panel">
       <header class="inquiry-drawer__header">
         <h3>Inquiry Basket</h3>
-        <button class="inquiry-drawer__close" id="inquiry-close" aria-label="Close"></button>
+        <button class="inquiry-drawer__close" id="inquiry-close" aria-label="Close">&times;</button>
       </header>
-      <div class="inquiry-drawer__empty" id="inquiry-empty">Your inquiry basket is empty.</div>
+      <div class="inquiry-drawer__empty" id="inquiry-empty">
+        Your inquiry basket is empty. Add products to send them all in one WhatsApp message.
+      </div>
       <ul class="inquiry-drawer__list" id="inquiry-list"></ul>
       <footer class="inquiry-drawer__footer" id="inquiry-footer" style="display:none;">
-        <div class="inquiry-total"><span>Estimated total</span><span id="inquiry-total-amount">KES 0</span></div>
-        <a href="#" target="_blank" class="btn btn-whatsapp" id="inquiry-wa-btn"> Send Inquiry via WhatsApp</a>
+        <div class="inquiry-total">
+          <span>Estimated total</span>
+          <span id="inquiry-total-amount">KES 0</span>
+        </div>
+        <a href="#" target="_blank" rel="noreferrer" class="btn btn-whatsapp" id="inquiry-wa-btn" style="width:100%; justify-content:center;">
+          Send Inquiry via WhatsApp
+        </a>
         <button class="inquiry-clear" id="inquiry-clear">Clear basket</button>
       </footer>
     </aside>
@@ -221,6 +286,24 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Navbar mobile
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    document.getElementById("mobile-close")?.addEventListener("click", () => mobileMenu.classList.remove("open"));
+    hamburger?.addEventListener("click", () => mobileMenu.classList.add("open"));
+
+    // Scroll reveal using IntersectionObserver
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
   </script>
   <script src="../script.js"></script>
 </body>

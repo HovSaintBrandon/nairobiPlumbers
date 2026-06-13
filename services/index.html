@@ -4,189 +4,948 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plumbing Services in Nairobi | Nairobi Plumbers</title>
-  <meta name="description" content="Professional plumbing services in Nairobi: bathroom renovation, shower installation, heaters, tiling, emergency plumbing and more. Available 24/7. Call +254 XXX XXX XXX now!">
+  <meta name="description" content="Professional plumbing services in Nairobi: bathroom renovation, shower installation, heaters, drain cleaning &amp; emergency plumbing. Available 24/7. Call +254 706 379 094.">
   <link rel="canonical" href="https://nairobiplumbers.co.ke/services/" />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Plumbing Services in Nairobi | Nairobi Plumbers">
-  <meta property="og:description" content="Professional plumbing services in Nairobi: bathroom renovation, shower installation, heaters, tiling, emergency plumbing and more. Available 24/7. Call +254 XXX XXX XXX now!">
-  <meta property="og:image" content="https://nairobiplumbers.co.ke/public/og/services.jpg">
+  <meta property="og:description" content="Professional plumbing services in Nairobi. Available 24/7.">
   <meta property="og:url" content="https://nairobiplumbers.co.ke/services/">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Plumbing Services in Nairobi | Nairobi Plumbers">
-  <meta name="twitter:description" content="Professional plumbing services in Nairobi: bathroom renovation, shower installation, heaters, tiling, emergency plumbing and more. Available 24/7. Call +254 XXX XXX XXX now!">
-  <meta name="twitter:image" content="https://nairobiplumbers.co.ke/public/og/services.jpg">
   <script type='application/ld+json'>
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Nairobi Plumbers",
     "url": "https://nairobiplumbers.co.ke",
-    "telephone": "+254-XXX-XXX-XXX",
-    "email": "info@nairobiplumbers.co.ke",
-    "image": "https://nairobiplumbers.co.ke/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "[Your Street Address]",
-      "addressLocality": "Nairobi",
-      "addressCountry": "KE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": -1.286389, "longitude": 36.817223 },
+    "telephone": "+254-706-379-094",
+    "email": "hello@nairobiplumbers.co.ke",
+    "address": { "@type": "PostalAddress", "streetAddress": "Ngong Road, Kilimani", "addressLocality": "Nairobi", "addressCountry": "KE" },
     "openingHours": "Mo-Su 00:00-23:59",
-    "priceRange": "KSh",
-    "areaServed": ["Nairobi","Westlands","Karen","Kilimani","Kasarani","Ruaka","Lavington"]
-  }
-  </script>
-  <script type='application/ld+json'>
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nairobiplumbers.co.ke" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://nairobiplumbers.co.ke/services/" }
-    ]
+    "priceRange": "KSh"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    /* ===== PAGE-SPECIFIC STYLES ===== */
+
+    /* Scroll animation base */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left  { opacity:0; transform:translateX(-40px); transition:opacity .6s ease, transform .6s ease; }
+    .reveal-right { opacity:0; transform:translateX(40px);  transition:opacity .6s ease, transform .6s ease; }
+    .reveal-left.visible, .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    /* Stagger delays */
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+    .delay-5 { transition-delay: 0.5s; }
+    .delay-6 { transition-delay: 0.6s; }
+
+    /* ---- HERO ---- */
+    .svc-hero {
+      background: linear-gradient(135deg, #c1121f 0%, #e63946 60%, #1d3557 100%);
+      color: #fff;
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .svc-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+    .svc-hero .breadcrumb {
+      font-size: 0.8125rem;
+      opacity: 0.7;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .svc-hero .breadcrumb a { color: rgba(255,255,255,0.8); }
+    .svc-hero .breadcrumb a:hover { color: #fff; }
+    .svc-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    .svc-hero p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 38rem;
+      margin-bottom: 2rem;
+    }
+    .svc-hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .svc-hero__badge {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .svc-hero__badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: pulse-dot 2s infinite;
+    }
+
+    /* ---- STATS BAR ---- */
+    .stats-bar {
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 1.5rem 0;
+      position: relative;
+      z-index: 10;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    .stat-item {}
+    .stat-item__num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .stat-item__label {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .stat-item__divider {
+      width: 2px;
+      background: var(--border);
+    }
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ---- SERVICES CARDS (large grid) ---- */
+    .all-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 1024px) { .all-services-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 600px)  { .all-services-grid { grid-template-columns: 1fr; } }
+
+    .svc-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s ease;
+      position: relative;
+    }
+    .svc-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(230,57,70,0.15);
+    }
+    .svc-card__top-bar {
+      height: 4px;
+      background: var(--primary);
+      width: 0;
+      transition: width 0.4s ease;
+    }
+    .svc-card:hover .svc-card__top-bar { width: 100%; }
+    .svc-card__img {
+      height: 200px;
+      background: var(--surface-2);
+      overflow: hidden;
+      position: relative;
+    }
+    .svc-card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .svc-card:hover .svc-card__img img { transform: scale(1.08); }
+    .svc-card__icon-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(230,57,70,0.35);
+    }
+    .svc-card__body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .svc-card__title { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.3; transition: color 0.2s; }
+    .svc-card:hover .svc-card__title { color: var(--primary); }
+    .svc-card__desc { font-size: 0.875rem; color: var(--text-light); line-height: 1.65; flex: 1; }
+    .svc-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .svc-card__tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(230,57,70,0.08);
+      color: var(--primary);
+    }
+    .svc-card__footer {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      background: var(--surface);
+    }
+    .svc-card__cta {
+      flex: 1;
+      text-align: center;
+      padding: 0.6rem;
+      border-radius: 8px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      border: 1px solid;
+    }
+    .svc-card__cta--primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .svc-card__cta--primary:hover { background: var(--primary-dark); }
+    .svc-card__cta--wa { background: transparent; border-color: rgba(0,0,0,0.15); color: var(--text); display:flex; align-items:center; justify-content:center; gap:0.3rem; }
+    .svc-card__cta--wa:hover { border-color: #25D366; color: #25D366; }
+
+    /* ---- HOW IT WORKS ---- */
+    .how-section { padding: 5rem 0; }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+    }
+    @media (max-width: 900px) { .steps-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 500px) { .steps-grid { grid-template-columns: 1fr; } }
+
+    .step-card {
+      background: #fff;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .step-card:hover { background: var(--surface); }
+    .step-card__num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 8px 20px rgba(230,57,70,0.3);
+      transition: transform 0.3s cubic-bezier(.34,1.56,.64,1);
+    }
+    .step-card:hover .step-card__num { transform: scale(1.12); }
+    .step-card__title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .step-card__desc { font-size: 0.875rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ---- WHY CHOOSE US ---- */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 900px) { .why-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 540px) { .why-grid { grid-template-columns: 1fr; } }
+
+    .why-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: box-shadow 0.25s, transform 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .why-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .why-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .why-card:hover::after { transform: scaleX(1); }
+    .why-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(230,57,70,0.08);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .why-card__title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .why-card__desc { font-size: 0.875rem; color: var(--text-light); line-height: 1.65; }
+
+    /* ---- QUOTE FORM ---- */
+    .quote-section {
+      background: linear-gradient(135deg, #1d3557 0%, #0f1c2e 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .quote-section::before {
+      content:'';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(230,57,70,0.12);
+      pointer-events: none;
+    }
+    .quote-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .quote-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .quote-left h2 { color: #fff; font-size: clamp(1.6rem,3vw,2.25rem); margin-bottom: 1rem; }
+    .quote-left p  { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+    .quote-features { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .quote-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+    }
+    .quote-features li::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' width='12' height='12'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .quote-form-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.25);
+    }
+    .quote-form-card h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
+    .quote-form-card .subtitle { font-size: 0.875rem; color: var(--text-light); margin-bottom: 1.5rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; margin-bottom: 0.875rem; }
+    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+    .form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .form-field label { font-size: 0.8rem; font-weight: 600; color: var(--text); }
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      width: 100%;
+      padding: 0.7rem 0.875rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      background: var(--surface);
+    }
+    .form-field input:focus,
+    .form-field textarea:focus,
+    .form-field select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(230,57,70,0.1);
+      background: #fff;
+    }
+    .form-field textarea { min-height: 110px; resize: vertical; }
+    .btn-submit {
+      width: 100%;
+      padding: 0.875rem;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 1rem;
+    }
+    .btn-submit:hover { background: var(--primary-dark); transform: translateY(-1px); }
+    .btn-submit:active { transform: translateY(0); }
+
+    /* ---- EMERGENCY CTA ---- */
+    .emergency-cta {
+      padding: 3rem 0;
+    }
+    .emergency-banner {
+      background: var(--primary);
+      border-radius: 20px;
+      padding: 2.5rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+    }
+    .emergency-banner::after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+    .emergency-banner__text h3 { color:#fff; font-size:1.5rem; margin-bottom:0.35rem; }
+    .emergency-banner__text p  { color:rgba(255,255,255,0.8); }
+    .emergency-banner__actions { display:flex; gap:0.875rem; flex-wrap:wrap; position:relative; z-index:1; }
+    .btn-emergency-call {
+      padding: 0.875rem 2rem;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--primary);
+      font-size: 1rem;
+      font-weight: 800;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+      white-space: nowrap;
+    }
+    .btn-emergency-call:hover { transform: scale(1.04); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .btn-emergency-wa {
+      padding: 0.875rem 1.5rem;
+      border-radius: 10px;
+      background: #25D366;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.2s;
+    }
+    .btn-emergency-wa:hover { background: #128C7E; }
+  </style>
 </head>
 <body>
 
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M48 136a40 40 0 0140-40h288a40 40 0 0140 40v240a40 40 0 01-40 40H88a40 40 0 01-40-40V136z" fill="none" stroke="currentColor" stroke-width="32"/><path d="M112 160l144 112 144-112" fill="none" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        hello@nairobiplumbers.co.ke
+      </div>
+      <div class="topbar__right">
+        <a href="tel:+254706379094">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +254 706 379 094
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-    <div class="container navbar__inner">
-      <a href="/" class="navbar__logo" style="display:flex; align-items:center;">
-        <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers Logo" style="height:160px; width:auto;">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers Logo">
       </a>
       <nav class="navbar__nav">
         <a href="/">Home</a>
         <div class="dropdown">
-          <button class="dropdown__trigger active">
+          <button class="dropdown__trigger" style="background:var(--primary);color:#fff;">
             Plumbing Services
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="dropdown__menu">
-            <div class="dropdown__menu-inner">
-              <a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a>
-              <a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a>
-              <a href="/services/water-heater-installation-nairobi/">Water Heater Installation</a>
-              <a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a>
-              <a href="/services/">All Services →</a>
-            </div>
+            <a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a>
+            <a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a>
+            <a href="/services/water-heater-installation-nairobi/">Water Heater Installation</a>
+            <a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a>
+            <a href="/services/toilet-repair-nairobi/">Toilet Repair</a>
+            <a href="/services/biodigester-installation-kenya/">Biodigester Installation</a>
+            <a href="/services/" style="font-weight:700;color:var(--primary);">All Services &rarr;</a>
           </div>
         </div>
+        <a href="/products/">All Products</a>
         <a href="/about/">About Us</a>
         <a href="/contact/">Contact us</a>
       </nav>
-      <a href="tel:+254XXXXXXXXX" class="btn btn-primary navbar__cta">Call Now</a>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu"></button>
+      <a href="tel:+254706379094" class="btn btn-primary navbar__cta">Call Now</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
     <div class="mobile-menu__header">
-      <span class="font-bold">Menu</span>
-      <button class="mobile-menu__close" id="mobile-close" aria-label="Close menu"></button>
+      <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers" style="height:44px;">
+      <button class="mobile-menu__close" id="mobile-close" aria-label="Close">&times;</button>
     </div>
     <nav>
       <a href="/">Home</a>
       <a href="/services/" class="active">Plumbing Services</a>
+      <a href="/products/">All Products</a>
       <a href="/about/">About Us</a>
       <a href="/contact/">Contact us</a>
     </nav>
-    <a href="tel:+254XXXXXXXXX" class="mobile-menu__phone">Call +254 XXX XXX XXX</a>
+    <a href="tel:+254706379094" class="mobile-menu__phone">Call +254 706 379 094</a>
   </div>
 
-  <!-- ===== PAGE HEADER ===== -->
-  <section class="page-header">
+  <!-- ===== HERO ===== -->
+  <section class="svc-hero">
+    <span class="svc-hero__badge">Available 24/7 in Nairobi</span>
     <div class="container">
-      <p class="page-header__eyebrow">Plumbing Services</p>
-      <h1 class="page-header__title">What we do best</h1>
-      <p class="page-header__desc">All services are carried out by licensed plumbers. Upfront pricing — no hidden charges. WhatsApp us to book in seconds.</p>
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </nav>
+      <h1 class="reveal">Professional Plumbing<br>Services in Nairobi</h1>
+      <p class="reveal delay-1">All services are carried out by licensed plumbers. Upfront pricing — no hidden charges. WhatsApp us to book in seconds.</p>
+      <div class="svc-hero__actions reveal delay-2">
+        <a href="tel:+254706379094" class="btn btn-white" style="font-weight:700;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call Now
+        </a>
+        <a href="https://wa.me/254706379094?text=Hello%20Nairobi%20Plumbers%2C%20I%20need%20a%20quote." target="_blank" class="btn btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ALL SERVICES ===== -->
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal delay-1">
+          <div class="stat-item__num" data-target="500">0+</div>
+          <div class="stat-item__label">Jobs Completed</div>
+        </div>
+        <div class="stat-item reveal delay-2">
+          <div class="stat-item__num" data-target="4.9">4.9</div>
+          <div class="stat-item__label">Google Rating</div>
+        </div>
+        <div class="stat-item reveal delay-3">
+          <div class="stat-item__num">24/7</div>
+          <div class="stat-item__label">Emergency Response</div>
+        </div>
+        <div class="stat-item reveal delay-4">
+          <div class="stat-item__num">1yr</div>
+          <div class="stat-item__label">Workmanship Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ALL SERVICES GRID ===== -->
   <section class="section">
     <div class="container">
-      <div class="services-grid" id="all-services-grid"></div>
+      <div class="section-heading text-center reveal">
+        <span class="section-heading__eyebrow">What We Offer</span>
+        <h2 class="section-heading__title">Our Plumbing Services</h2>
+        <p class="section-heading__desc">Every service is carried out by a licensed plumber with an upfront price — no surprises.</p>
+      </div>
+
+      <div class="all-services-grid">
+
+        <!-- Card 1 -->
+        <div class="svc-card reveal delay-1">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/courosel/blog-renovation.jpg" alt="Bathroom Renovation" loading="lazy">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Bathroom Renovation</h3>
+            <p class="svc-card__desc">Full bathroom makeovers — tiling, plumbing fixtures, vanities, glass cubicles, and complete fitting installation. Transform your bathroom from scratch.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">Tiling</span>
+              <span class="svc-card__tag">Fitting</span>
+              <span class="svc-card__tag">Full Reno</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/bathroom-renovation-nairobi/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=I%20need%20a%20quote%20for%20Bathroom%20Renovation" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="svc-card reveal delay-2">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/courosel/blog-heater.jpg" alt="Emergency Plumbing" loading="lazy">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Emergency Plumbing — 24/7</h3>
+            <p class="svc-card__desc">Burst pipes, water leaks, blocked drains — we respond within 60 minutes anywhere in Nairobi. Day or night, weekends included.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">24/7</span>
+              <span class="svc-card__tag">60 min response</span>
+              <span class="svc-card__tag">Burst Pipes</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/emergency-plumber-nairobi/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=EMERGENCY%20-%20I%20need%20an%20emergency%20plumber%20now!" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="svc-card reveal delay-3">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/storage-heater.png" alt="Water Heater Installation" loading="lazy" style="object-position:center;">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Water Heater Installation</h3>
+            <p class="svc-card__desc">Supply and installation of instant showers, storage heaters, and solar water heaters. Guaranteed safe installation with full electrical compliance.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">Instant Shower</span>
+              <span class="svc-card__tag">Storage</span>
+              <span class="svc-card__tag">Solar</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/water-heater-installation-nairobi/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=I%20need%20a%20quote%20for%20Water%20Heater%20Installation" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="svc-card reveal delay-2">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/courosel/blog-pipes.jpg" alt="Drain Cleaning" loading="lazy">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Drain &amp; Sewer Cleaning</h3>
+            <p class="svc-card__desc">Professional drain rodding, high-pressure water jetting, and sewer line inspection. We clear blockages thoroughly and fast.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">Drain Rodding</span>
+              <span class="svc-card__tag">Jetting</span>
+              <span class="svc-card__tag">CCTV</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/drain-cleaning-nairobi/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=I%20need%20drain%20cleaning%20services" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="svc-card reveal delay-3">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/toilet-accessories.png" alt="Toilet Repair" loading="lazy">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 12h8"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Toilet Repair &amp; Replacement</h3>
+            <p class="svc-card__desc">Cistern repairs, toilet seat replacement, leaking toilets, and full unit replacements. Same-day service available across Nairobi.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">Cistern</span>
+              <span class="svc-card__tag">Leak Fix</span>
+              <span class="svc-card__tag">Replacement</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/toilet-repair-nairobi/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=I%20need%20toilet%20repair%20services" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="svc-card reveal delay-4">
+          <div class="svc-card__top-bar"></div>
+          <div class="svc-card__img">
+            <img src="../assets/bidet-shower.png" alt="Biodigester Installation" loading="lazy">
+            <div class="svc-card__icon-badge">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <div class="svc-card__body">
+            <h3 class="svc-card__title">Biodigester Installation Kenya</h3>
+            <p class="svc-card__desc">Eco-friendly biodigester systems for homes and commercial properties. NCA-compliant installation, full design, and maintenance support.</p>
+            <div class="svc-card__tags">
+              <span class="svc-card__tag">Eco-Friendly</span>
+              <span class="svc-card__tag">NCA Approved</span>
+              <span class="svc-card__tag">Maintenance</span>
+            </div>
+          </div>
+          <div class="svc-card__footer">
+            <a href="/services/biodigester-installation-kenya/" class="svc-card__cta svc-card__cta--primary">Learn More</a>
+            <a href="https://wa.me/254706379094?text=I%20need%20a%20biodigester%20installation%20quote" target="_blank" class="svc-card__cta svc-card__cta--wa">
+              <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ===== HOW WE WORK ===== -->
-  <section class="section section--alt">
-    <div class="container grid-2">
-      <div>
-        <div class="section-heading">
-          <span class="section-heading__eyebrow">Our Process</span>
-          <h2 class="section-heading__title">How it works</h2>
-          <p class="section-heading__desc">From first contact to job completion — simple and stress-free.</p>
-        </div>
-        <div class="services-process">
-          <div class="process-step">
-            <div class="process-step__num">1</div>
-            <div>
-              <div class="process-step__title">WhatsApp or Call Us</div>
-              <p class="process-step__desc">Send us a message describing your plumbing issue. We reply within 10 minutes during business hours.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="process-step__num">2</div>
-            <div>
-              <div class="process-step__title">Get a Free Quote</div>
-              <p class="process-step__desc">We provide an upfront price — no hidden fees or surprise charges after the job.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="process-step__num">3</div>
-            <div>
-              <div class="process-step__title">Book a Time</div>
-              <p class="process-step__desc">Choose a slot that works for you — same-day available for most jobs across Nairobi.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="process-step__num">4</div>
-            <div>
-              <div class="process-step__title">Job Done, Guaranteed</div>
-              <p class="process-step__desc">Our plumber arrives on time, completes the work, and cleans up. Every job backed by a 1-year workmanship guarantee.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="contact-info-card" style="margin-bottom:0">
-          <h3>Get a free quote</h3>
-          <p class="text-muted text-sm mb-4">Describe your plumbing need and we'll get back to you immediately.</p>
-          <form id="services-quote-form">
-            <div class="contact-form-group">
-              <input type="text" id="sq-name" placeholder="Your name" required>
-            </div>
-            <div class="contact-form-group">
-              <input type="tel" id="sq-phone" placeholder="Phone number" required>
-            </div>
-            <div class="contact-form-group">
-              <textarea id="sq-message" rows="4" placeholder="Describe your plumbing issue..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-whatsapp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.549 4.107 1.512 5.834L0 24l6.335-1.493A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.359-.213-3.72.876.936-3.623-.234-.372A9.818 9.818 0 112.182 12 9.818 9.818 0 0112 21.818z"/></svg>
-              Get Quote via WhatsApp
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="section section--primary">
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-section section--alt">
     <div class="container">
-      <div class="cta-banner text-center" style="justify-content:center;flex-direction:column;align-items:center;gap:1.25rem;">
-        <h3 class="cta-banner__title">Emergency Plumbing? Call Now.</h3>
-        <p class="cta-banner__desc">We respond within 60 minutes across Nairobi — 24/7 for true emergencies.</p>
-        <a href="tel:+254XXXXXXXXX" class="btn btn-white"> +254 XXX XXX XXX</a>
+      <div class="section-heading text-center reveal">
+        <span class="section-heading__eyebrow">Our Process</span>
+        <h2 class="section-heading__title">How It Works</h2>
+        <p class="section-heading__desc">From first contact to job completion — simple and stress-free.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal delay-1">
+          <div class="step-card__num">1</div>
+          <h3 class="step-card__title">WhatsApp or Call Us</h3>
+          <p class="step-card__desc">Send us a message describing your plumbing issue. We reply within 10 minutes during business hours.</p>
+        </div>
+        <div class="step-card reveal delay-2">
+          <div class="step-card__num">2</div>
+          <h3 class="step-card__title">Get a Free Quote</h3>
+          <p class="step-card__desc">We provide an upfront price — no hidden fees or surprise charges after the job.</p>
+        </div>
+        <div class="step-card reveal delay-3">
+          <div class="step-card__num">3</div>
+          <h3 class="step-card__title">Book a Time</h3>
+          <p class="step-card__desc">Choose a slot that works for you — same-day available for most jobs across Nairobi.</p>
+        </div>
+        <div class="step-card reveal delay-4">
+          <div class="step-card__num">4</div>
+          <h3 class="step-card__title">Job Done, Guaranteed</h3>
+          <p class="step-card__desc">Our plumber arrives on time, completes the work, and cleans up. Backed by a 1-year workmanship guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <span class="section-heading__eyebrow">Why Nairobi Plumbers</span>
+        <h2 class="section-heading__title">Trusted by 500+ Nairobi Homes</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal delay-1">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 class="why-card__title">Licensed &amp; Insured</h4>
+          <p class="why-card__desc">All our plumbers are fully licensed by the relevant Kenyan authorities and carry professional indemnity insurance.</p>
+        </div>
+        <div class="why-card reveal delay-2">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4 class="why-card__title">Same-Day Response</h4>
+          <p class="why-card__desc">For most jobs in Nairobi, we can have a plumber at your door the same day you call or WhatsApp us.</p>
+        </div>
+        <div class="why-card reveal delay-3">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          </div>
+          <h4 class="why-card__title">Upfront Pricing</h4>
+          <p class="why-card__desc">We quote before we start. No surprise bills. No hidden charges. What we quote is what you pay.</p>
+        </div>
+        <div class="why-card reveal delay-1">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4 class="why-card__title">1-Year Guarantee</h4>
+          <p class="why-card__desc">Every job we complete is backed by a full 1-year workmanship guarantee. If something goes wrong, we fix it free.</p>
+        </div>
+        <div class="why-card reveal delay-2">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h4 class="why-card__title">WhatsApp Booking</h4>
+          <p class="why-card__desc">Book a plumber in seconds via WhatsApp — no forms, no hold music, no waiting. Just message us and we handle the rest.</p>
+        </div>
+        <div class="why-card reveal delay-3">
+          <div class="why-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4 class="why-card__title">Experienced Team</h4>
+          <p class="why-card__desc">Over a decade of experience in Nairobi. Our plumbers have handled every type of plumbing scenario imaginable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE FORM ===== -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-layout">
+        <div class="quote-left reveal-left">
+          <h2>Get a Free Quote Today</h2>
+          <p>Describe your plumbing issue and we'll respond with a fair, upfront price within minutes.</p>
+          <ul class="quote-features">
+            <li>Response within 10 minutes</li>
+            <li>No obligation — quote is free</li>
+            <li>Licensed plumbers guaranteed</li>
+            <li>Upfront pricing, no hidden fees</li>
+            <li>Same-day service available</li>
+          </ul>
+        </div>
+        <div class="reveal-right">
+          <div class="quote-form-card">
+            <h3>Request a Quote</h3>
+            <p class="subtitle">Fill in the form — we'll continue on WhatsApp.</p>
+            <form id="services-quote-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="sq-name">Your Name</label>
+                  <input type="text" id="sq-name" placeholder="e.g. James Kamau" required>
+                </div>
+                <div class="form-field">
+                  <label for="sq-phone">Phone Number</label>
+                  <input type="tel" id="sq-phone" placeholder="07XX XXX XXX" required>
+                </div>
+              </div>
+              <div class="form-field" style="margin-bottom:0.875rem;">
+                <label for="sq-service">Service Needed</label>
+                <select id="sq-service">
+                  <option value="">Select a service...</option>
+                  <option>Bathroom Renovation</option>
+                  <option>Emergency Plumbing</option>
+                  <option>Water Heater Installation</option>
+                  <option>Drain &amp; Sewer Cleaning</option>
+                  <option>Toilet Repair</option>
+                  <option>Biodigester Installation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field" style="margin-bottom:0.875rem;">
+                <label for="sq-message">Describe Your Issue</label>
+                <textarea id="sq-message" placeholder="e.g. My bathroom tap is leaking and I need it fixed urgently..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <svg width="18" height="18" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                Send via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EMERGENCY CTA ===== -->
+  <section class="emergency-cta">
+    <div class="container">
+      <div class="emergency-banner reveal">
+        <div class="emergency-banner__text">
+          <h3>Emergency Plumbing? Call Right Now.</h3>
+          <p>We respond within 60 minutes across Nairobi — 24/7, including weekends and public holidays.</p>
+        </div>
+        <div class="emergency-banner__actions">
+          <a href="tel:+254706379094" class="btn-emergency-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            +254 706 379 094
+          </a>
+          <a href="https://wa.me/254706379094?text=EMERGENCY%20-%20I%20need%20an%20emergency%20plumber%20now!" target="_blank" class="btn-emergency-wa">
+            <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -196,21 +955,17 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <h4 class="footer__col-title">Quicklinks</h4>
+          <img src="/assets/nairobi-plumbers-logo.png" alt="Nairobi Plumbers" style="height:48px; margin-bottom:1rem; filter:brightness(0) invert(1);">
+          <p style="font-size:0.8125rem;color:rgba(255,255,255,0.6);max-width:220px;">Licensed plumbers serving Nairobi and Mombasa.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
           <ul class="footer__col-list">
             <li><a href="/">Home</a></li>
             <li><a href="/services/">Services</a></li>
+            <li><a href="/products/">Products</a></li>
             <li><a href="/about/">About Us</a></li>
             <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer__col-title">Our Areas</h4>
-          <ul class="footer__col-list">
-            <li><a href="/areas/westlands/">Westlands</a></li>
-            <li><a href="/areas/karen/">Karen</a></li>
-            <li><a href="/areas/kilimani/">Kilimani</a></li>
-            <li><a href="/areas/kasarani/">Kasarani</a></li>
           </ul>
         </div>
         <div>
@@ -218,74 +973,74 @@
           <ul class="footer__col-list">
             <li><a href="/services/bathroom-renovation-nairobi/">Bathroom Renovation</a></li>
             <li><a href="/services/emergency-plumber-nairobi/">Emergency Plumbing</a></li>
-            <li><a href="/services/water-heater-installation-nairobi/">Instant Showers</a></li>
             <li><a href="/services/drain-cleaning-nairobi/">Drain Cleaning</a></li>
+            <li><a href="/services/water-heater-installation-nairobi/">Water Heater</a></li>
+            <li><a href="/services/toilet-repair-nairobi/">Toilet Repair</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer__col-title">Get in Touch</h4>
+          <h4 class="footer__col-title">Contact</h4>
           <ul class="footer__col-list">
-            <li class="footer__contact-item"><span class="icon"></span> Nairobi, Kenya</li>
-            <li class="footer__contact-item"><span class="icon"></span> <a href="tel:+254XXXXXXXXX">+254 XXX XXX XXX</a></li>
-            <li class="footer__contact-item"><span class="icon">️</span> <a href="mailto:info@nairobiplumbers.co.ke">info@nairobiplumbers.co.ke</a></li>
+            <li class="footer__contact-item">Ngong Road, Kilimani, Nairobi</li>
+            <li class="footer__contact-item"><a href="tel:+254706379094">+254 706 379 094</a></li>
+            <li class="footer__contact-item"><a href="mailto:hello@nairobiplumbers.co.ke">hello@nairobiplumbers.co.ke</a></li>
           </ul>
           <div class="footer__social">
-            <a href="https://wa.me/254XXXXXXXXX" class="footer__social-btn" aria-label="WhatsApp"></a>
+            <a href="#" class="footer__social-btn" aria-label="Facebook">f</a>
+            <a href="https://wa.me/254706379094" class="footer__social-btn" aria-label="WhatsApp">w</a>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© <span id="year"></span> Nairobi Plumbers. All rights reserved.</p>
-      <p>Licensed & insured plumbers serving Nairobi.</p>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+        <p>&copy; <span id="year"></span> Nairobi Plumbers. All rights reserved.</p>
+        <p>Licensed &amp; insured plumbers serving Nairobi.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- ===== FLOATING WHATSAPP ===== -->
-  <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nairobi%20Plumbers%2C%20I%20need%20a%20plumber%20in%20Nairobi." target="_blank" rel="noreferrer" class="floating-wa" aria-label="Chat on WhatsApp">
+  <!-- Floating WA -->
+  <a href="https://wa.me/254706379094?text=Hello%20Nairobi%20Plumbers" target="_blank" rel="noreferrer" class="floating-wa" aria-label="Chat on WhatsApp">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.549 4.107 1.512 5.834L0 24l6.335-1.493A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.359-.213-3.72.876.936-3.623-.234-.372A9.818 9.818 0 112.182 12 9.818 9.818 0 0112 21.818z"/></svg>
     <span class="floating-wa__dot"></span>
   </a>
 
-  <!-- Mobile Sticky Call Bar -->
   <div class="mobile-sticky-cta">
-    <a href="tel:+254XXXXXXXXX" class="btn btn-primary" style="width:100%; border-radius:0;">Call Now: +254 XXX XXX XXX</a>
-  </div>
-
-  <!-- ===== INQUIRY BASKET ===== -->
-  <button class="inquiry-float" id="inquiry-float" aria-label="Open inquiry basket">
-    ️ Inquiry (<span class="inquiry-count">0</span>)
-  </button>
-  <div class="inquiry-drawer" id="inquiry-drawer" role="dialog" aria-modal="true">
-    <div class="inquiry-drawer__backdrop" id="inquiry-backdrop"></div>
-    <aside class="inquiry-drawer__panel">
-      <header class="inquiry-drawer__header">
-        <h3>Inquiry Basket</h3>
-        <button class="inquiry-drawer__close" id="inquiry-close" aria-label="Close"></button>
-      </header>
-      <div class="inquiry-drawer__empty" id="inquiry-empty">Your inquiry basket is empty.</div>
-      <ul class="inquiry-drawer__list" id="inquiry-list"></ul>
-      <footer class="inquiry-drawer__footer" id="inquiry-footer" style="display:none;">
-        <div class="inquiry-total"><span>Estimated total</span><span id="inquiry-total-amount">KES 0</span></div>
-        <a href="#" target="_blank" class="btn btn-whatsapp" id="inquiry-wa-btn"> Send Inquiry via WhatsApp</a>
-        <button class="inquiry-clear" id="inquiry-clear">Clear basket</button>
-      </footer>
-    </aside>
+    <a href="tel:+254706379094">Call Now: +254 706 379 094</a>
   </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Services quote form
+    // Navbar mobile
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    document.getElementById("mobile-close")?.addEventListener("click", () => mobileMenu.classList.remove("open"));
+    hamburger?.addEventListener("click", () => mobileMenu.classList.add("open"));
+
+    // Quote form
     document.getElementById("services-quote-form")?.addEventListener("submit", function(e) {
       e.preventDefault();
-      const name = document.getElementById("sq-name").value;
-      const phone = document.getElementById("sq-phone").value;
+      const name    = document.getElementById("sq-name").value;
+      const phone   = document.getElementById("sq-phone").value;
+      const service = document.getElementById("sq-service").value;
       const message = document.getElementById("sq-message").value;
-      const msg = `Hi Nairobi Plumbers, I'm ${name} (${phone}). I need a quote for: ${message}`;
-      window.open(`https://wa.me/254XXXXXXXXX?text=${encodeURIComponent(msg)}`, "_blank");
+      const msg = `Hi Nairobi Plumbers, I'm ${name} (${phone}).\nService needed: ${service || 'Not specified'}\n\n${message}`;
+      window.open(`https://wa.me/254706379094?text=${encodeURIComponent(msg)}`, "_blank");
     });
+
+    // Scroll reveal using IntersectionObserver
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
   </script>
-  <script src="../script.js"></script>
 </body>
 </html>
