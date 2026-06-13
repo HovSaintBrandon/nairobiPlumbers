@@ -294,7 +294,10 @@ async function initProductsPage() {
 function productCardHtml(p) {
   const price  = p.salePrice || p.price;
   const badgeHtml = p.badge ? `<div class="product-card__badge">${p.badge}</div>` : "";
-  const waUrl  = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Hi Nairobi Plumbers, I'm interested in: ${p.name} (KES ${price.toLocaleString()})`)}`;
+  const slug = p.url ? p.url.split('/').filter(Boolean).pop() : p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const productPageUrl = `https://nairobiplumbers.co.ke/products/${slug}/`;
+  const waText = `Hello Nairobi Plumbers, I would like to inquire and order:\n\n*${p.name}*\n*Product URL:* ${productPageUrl}\n\nThank You!`;
+  const waUrl  = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(waText)}`;
 
   return `
     <div class="product-card">
