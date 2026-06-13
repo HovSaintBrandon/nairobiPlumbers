@@ -76,15 +76,6 @@ const services = [
   },
 ];
 
-/* ============================================================
-   REVIEWS DATA
-   ============================================================ */
-const reviews = [
-  { name: "Mary Wanjiru",   location: "Westlands",  rating: 5, text: "Excellent service! They fixed our burst pipe within an hour. Very professional and clean workers." },
-  { name: "James Kamau",    location: "Karen",      rating: 5, text: "Best plumbers in Nairobi. Installed our instant shower perfectly and the price was very fair." },
-  { name: "Fatuma Hassan",  location: "Kilimani",   rating: 5, text: "Quick response, polite staff, and guaranteed work. I highly recommend Nairobi Plumbers!" },
-  { name: "David Otieno",   location: "Kasarani",   rating: 5, text: "They renovated our entire bathroom. The result was stunning. Will use them again for sure." },
-];
 
 /* ============================================================
    BLOG DATA
@@ -208,26 +199,6 @@ function initHomePage() {
       </div>`).join("");
   }
 
-  // Reviews
-  const rg = document.getElementById("reviews-grid");
-  if (rg) {
-    rg.innerHTML = reviews.map(r => {
-      const stars = "&#9733;".repeat(r.rating) + "&#9734;".repeat(5 - r.rating);
-      const initials = r.name.split(" ").map(n => n[0]).join("").slice(0, 2);
-      return `
-        <div class="review-card">
-          <div class="review-card__stars">${stars}</div>
-          <p class="review-card__text">"${r.text}"</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">${initials}</div>
-            <div>
-              <div class="review-card__name">${r.name}</div>
-              <div class="review-card__location">${r.location}</div>
-            </div>
-          </div>
-        </div>`;
-    }).join("");
-  }
 
   // Blog
   const bg = document.getElementById("blog-grid");
