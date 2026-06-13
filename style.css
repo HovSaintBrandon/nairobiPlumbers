@@ -27,7 +27,7 @@
   --shadow-md:     0 4px 12px rgba(0,0,0,0.1);
   --shadow-lg:     0 8px 24px rgba(0,0,0,0.12);
   --topbar-h:      40px;
-  --navbar-h:      70px;
+  --navbar-h:      60px;
   --container:     85rem;
 }
 
@@ -143,9 +143,11 @@ p  { line-height: 1.7; }
   padding: 0 1.25rem;
 }
 .navbar__logo img {
-  height: 52px;
+  height: 100px;
+  max-width: none;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 .navbar__nav {
   display: flex;
@@ -831,7 +833,7 @@ p  { line-height: 1.7; }
 .blog-card__link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.875rem; font-weight: 600; color: var(--primary); margin-top: 0.875rem; }
 
 /* ============================
-   LOCATION / MOMBASA BANNER
+   LOCATION / ELDORET BANNER
    ============================ */
 .location-banner {
   display: flex;

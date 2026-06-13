@@ -10,7 +10,7 @@ const SITE = {
   name:      "Nairobi Plumbers",
   phone:     "+254 706 379 094",
   phoneHref: "tel:+254706379094",
-  email:     "hello@nairobiplumbers.co.ke",
+  email:     "nairobiplumbers@gmail.com",
   address:   "Ngong Road, Kilimani, Nairobi",
   whatsapp:  "254706379094",
 };
